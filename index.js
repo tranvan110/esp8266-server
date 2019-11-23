@@ -6,7 +6,7 @@ server.listen(PORT, function () {
     console.log("Server address: " + ip.address() + ":" + PORT);
 });
 
-var events = ["connect", "info", "getInfo", "setInfo", "message", "heartRate", "stepCount", "grygo", "control"];
+var events = ["connect", "getInfo", "setInfo", "info", "message", "heartRate", "stepCount", "grygo", "control"];
 
 io.on("connection", function (socket) {
     console.log("Connected");
